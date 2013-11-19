@@ -7,7 +7,7 @@ public class StackTest {
     public void test_isEmpty(){
         System.out.println("Test para vetificar si la pila está vacía");
         Stack pila = new Stack();
-        assertTrue(pila.isEmpty());
+        assertTrue(!pila.isEmpty());
     }
    
     @Test
@@ -15,7 +15,7 @@ public class StackTest {
         System.out.println("Test para vetificar el ingreso de un elemento y que la pila no está vacía");
         Stack pila = new Stack();
         pila.push(35);
-        assertFalse(pila.isEmpty());
+        assertFalse(!pila.isEmpty());
     }
     
     @Test
@@ -24,7 +24,7 @@ public class StackTest {
         Stack pila = new Stack();
         pila.push(35);
         pila.pop();
-        assertTrue(pila.isEmpty());
+        assertTrue(!pila.isEmpty());
     }
     
     @Test
